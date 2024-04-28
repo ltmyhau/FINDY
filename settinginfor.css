@@ -1,0 +1,633 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* ------------- Navbar ------------- */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar__logo-img {
+    height: 50px;
+}
+
+.navbar__heading-link {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__heading-icon {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+
+/* ---------------tabbar_title3--------- */
+
+.navbar__heading{
+    position: relative;
+}
+
+.tabbar_title3 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title4 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title3-hover{
+    text-align: left;
+    position: absolute;
+    top: 230%;
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    left: -200px;
+    border-radius: 8px;
+    padding: 20px 10px;
+    display: none;
+    z-index: 10;
+}
+
+.tabbar_title3-hover::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top:-40px;
+    left: 100px;
+}
+
+.tabbar_title3-hover--avatar img{
+    width: 100%;
+}
+
+
+.navbar__heading:hover .tabbar_title3-hover{
+    display: block;
+}
+.tabbar_title3-hover-container{
+    margin: 0px 10px;
+}
+
+.infor_user{
+    padding: 10px 0;
+    border-bottom: 1px solid #d6d6d6;
+    
+}
+
+.tabbar_title3-hover--inforiname{
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.tabbar_title3-hover--infor-ma{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.tabbar_title3-hover--infor-email{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.tabbar_title3-hover--button{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.tabbar_title3-hover--button div{
+    margin: 5px 0;
+   
+}
+
+.tabbar_title3-hover--button a{
+    text-decoration: none;
+}
+
+.tabbar_title3-hover--button div span{
+    display: none;
+    /* transition: all 1s ease; */
+}
+.tabbar_title3-hover--button div:hover span{
+    display: block;
+   
+}
+.tabbar_title3-hover--button div:hover{
+    color: var(--main-color);
+}
+
+.tabbar_title3-hover--button-settinginfor{
+    display: flex;
+    align-items: center;
+   
+   color: var(--text-color);
+   padding: 10px 5px;
+   background-color: #ebebeb;
+   border-radius: 8px;
+}
+
+.tabbar_title3-hover--button-settinginfor i{
+    color: var(--main-color);
+}
+
+
+/* ------------- Navbar ------------- */
+.top{
+    width: 100%;
+    height: var(--top-height);
+    background-color: #000;
+}
+
+
+/* ---------------manageroder------------ */
+.manageroder{
+    margin-top: 120px;
+}
+
+.manageroder_header{
+    text-align: center;
+    background-color: #000;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.manageroder_header > div > div{
+    padding: 10px 0;
+}
+
+.manageroder_header > div > div:hover{
+    background-color: #1b1b1b;
+}
+
+
+
+
+
+
+
+/* Định dạng cho .manageroder_content */
+
+.manageroder_content{
+    margin: 6px 0;
+}
+
+.manageroder_content > div{
+    border: 1px solid #cccccc;
+    background-color: #fafafa;
+   display: flex;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.manageroder_content-items--avatar{
+    width: 10%;
+    text-align: center;
+}
+
+.manageroder_content-items--mid{
+    width: 60%;
+}
+
+.manageroder_content-items--button{
+    width: 30%;
+}
+
+.manageroder_content-items--avatar img{
+    width: 48%;
+}
+
+/* Định dạng cho .manageroder_container */
+
+
+
+
+/* Định dạng cho .manageroder_content-items--avatar */
+.manageroder_content-items--avatar img {
+    max-width: 100%;
+    border-radius: 50%; /* Bo góc ảnh thành hình tròn */
+}
+
+/* Định dạng cho .manageroder_content-items--mid */
+.manageroder_content-items--mid {
+    margin-left: 20px; /* Khoảng cách với .manageroder_content-items--avatar */
+}
+
+/* Định dạng cho .name */
+.name {
+    color: #263a4d;
+    display: -webkit-box;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    line-height: 28px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Định dạng cho .address và .time */
+.address, .time {
+    align-items: center;
+    
+    border-radius: 4px;
+    color: #263a4d;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 6px;
+    letter-spacing: .14px;
+    line-height: 22px;
+    padding: 2px 8px 2px 4px;
+}
+
+/* Định dạng cho .style */
+.style {
+    font-style: italic;
+    color: #212f3f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .175px;
+    line-height: 22px;
+}
+
+/* Định dạng cho .price */
+.price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Định dạng cho .detail */
+.detail a {
+    text-decoration: none;
+    color: #007bff; /* Màu liên kết */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Định dạng cho .manageroder_content-items--button */
+.manageroder_content-items--button button {
+    align-items: center;
+    background: #00b14f;
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: .175px;
+    line-height: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Định dạng cho .manageroder_content-items--button button:hover */
+.manageroder_content-items--button button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+
+  
+/* ----------------footer-------------- */
+
+
+
+.footer{
+    margin-top: 150px;
+    background-color: #12151b;
+    padding: 50px 0;
+    color: var(--text-color-main);
+    font-size: 1rem;
+    border-top: 1px solid #686766;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--text-color-main);
+}
+
+.footer_logo div{
+    font-size: 1.3rem;
+    margin: 5px 0;
+    color: var(--text-color-main);
+}
+
+.footer_logo div a{
+    text-decoration: none;
+    color: var(--text-color-main);
+}
+.footer_logo-logo img{
+    width: 30%;
+}
+
+.footer div h1{
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.footer div ul li{
+    list-style: none;
+    
+    margin: 5px 0;
+   
+}
+
+.footer div ul a li:hover{
+    padding-left: 15px;
+    color: #5643ff;
+    transition: all 0.3s ease-in;
+}
+
+/* ------- Form đăng nhập, đăng ký -------*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal__container {
+    margin: auto;
+}
+
+.account_form {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.account_form__container {
+    padding: 16px 32px;
+}
+
+.account_form__heading {
+    color: var(--text-color);
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.account_form__form {
+    margin: 16px;
+}
+
+.account_form__input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.show-hide-password {
+    position: absolute;
+    padding: 12px;
+    font-size: 1.4rem;
+    top: calc((100% - 16px) / 2);
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.account_form__input:focus {
+    border-color: var(--main-color);
+}
+
+.account_form__aside {
+    margin: 0 16px;
+}
+
+.account_form__policy-text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.account_form__policy-link {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.account_form__btn {
+    width: calc(100% - 32px);
+    margin: 20px 16px;
+}
+
+.account_form__socials {
+    padding: 0 32px;
+}
+
+.account_form__separate {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
+    line-height: 0;
+}
+
+.account_form__separate-text {
+    font-size: 1.4rem;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.25);
+    padding: 0 10px;
+}
+
+.account_form__socials-list {
+    margin: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account_form__socials--facebook {
+    color: #3a5a9b;
+}
+
+.account_form__socials--google {
+    color: #000;
+}
+
+.account_form__socials--facebook,
+.account_form__socials--google {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.account_form__socials--facebook:hover,
+.account_form__socials--google:hover {
+    background-color: #f5f5f5;
+}
+
+.account_form__socials-icon {
+    font-size: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.account_form__socials-title {
+    margin: 0 16px;
+}
+
+.account_form__footer {
+    /* padding: 80px 32px 16px; */
+    padding: 16px 32px;
+    text-align: center;
+}
+
+.account_form__footer-btn {
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.account_form__text {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.account_form__link {
+    text-decoration: none;
+    color: var(--main-color)
+}
+
+/* ---boxchat---------- */
+/* CSS for chat container */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS for chat button */
+
+.settinginfor{
+    padding: 120px;
+    color: var(--text-color-main);
+}
+
+.settinginfor_left{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 27px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.settinginfor_left-header{
+    color: #212f3f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 0;
+    margin: 5px 0;
+}
+
+.settinginfor_left-compel{
+    color: #4d5965;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 5px 0;
+}
+
+label{
+    color: #212f3f;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 5px 0;
+    
+}
+
+.settinginfor_left input{
+    background: #fff;
+    border: 1px solid #e9eaec;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 30px;
+    margin: 5px 0;
+    padding-left: 5PX;
+}
+
+.settinginfor_left button{
+    background: #00b14f;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 20px;
+    width: 100px;
+}
+
+  
+  
+  

@@ -1,0 +1,282 @@
+.main {
+    background-color: var(--background-color);
+}
+
+/* ------------- Quản lý bài đăng -------------*/
+.post {
+    padding-bottom: 60px;
+}
+
+.post-management-container {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+}
+
+.post-management-content {
+    padding-top: 36px;
+}
+
+.post-heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 32px;
+}
+.post-content {
+    border: 1px solid var(--border-color);
+    padding: 15px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.post-content:hover {
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 20px 0 rgba(71, 140, 67, 0.2);
+    transform: translateY(-1px);
+}
+
+.post-content-warp {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--text-color);
+    border-radius: 10px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+}
+
+.post-content-warp:hover {
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 20px 0 rgba(71, 140, 67, 0.2);
+    /* box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.09); */
+    background-color: #fff;
+    transform: translateY(-1px);
+}
+
+
+
+.post-content__title {
+    font-size: 2rem;
+    color: var(--main-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.post-content__author {
+    font-size: 1.4rem;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-content__name {
+    font-style: italic;
+}
+
+.post-content__time-icon {
+    margin-right: 4px;
+}
+
+.post-content__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    background-color: #dbdbdb;
+    /* background-color: var(--main-color-1); */
+    border-radius: 2px;
+    color: var(--text-color);
+    margin: 12px 0;
+}
+
+.post-content__price {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.post-content__deadline {
+    font-size: 1.2rem;
+}
+
+.post-content__artwork-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.post-content__artwork-img {
+    width: 30%;
+    padding-top: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin: 1px;
+}
+
+.post-content__artwork-img:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.post-content__artwork-img:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.post-content__text {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.post-content__details {
+    margin-top: 16px;
+    height: 1.6rem;
+    overflow: hidden;
+}
+
+.post-content__detail {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0 8px;
+    border-right: 1px solid var(--text-color);
+}
+
+.post-content__detail:last-child {
+    border: none;
+}
+
+.post-content__detail:hover {
+    color: var(--main-color);
+}
+
+/* ------------- Danh sách thợ đã ứng tuyển -------------*/
+.candidate {
+    margin: 16px;
+}
+
+.candidate__heading {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.candidate__resume {
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #ccc;
+    /* background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2)); */
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.candidate__resume-warp {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.candidate__avatar {
+    position: relative;
+    margin-right: 32px;
+}
+
+.candidate__avatar-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.candidate__avatar-text {
+    padding: 4px 6px;
+    background-color: #586B50;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -8px;
+    bottom: 10px;
+}
+
+.candidate__info {
+    flex: 1;
+}
+
+.candidate__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+}
+.giatri p{
+    margin: 10px 0;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.candidate__text {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #000000;
+}
+
+.candidate__rating {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.candidate__control a {
+    display: block;
+    text-decoration: none;
+}
+
+.candidate__control-btn {
+    margin: 16px;
+}
+
+
+/* ------------- Responsive ------------- */
+
+/* ------------- Mobile ------------- */
+@media (max-width: 739px) {
+    .post-heading {
+        text-align: center;
+    }
+    
+    .candidate__avatar-img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .candidate__resume {
+        display: block;
+    }
+
+    .candidate__control {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 16px;
+    }
+
+    .candidate__control a,
+    .candidate__control-btn {
+        width: 100%;
+        margin: 0 8px;
+    }
+}

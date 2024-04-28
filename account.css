@@ -1,0 +1,505 @@
+/* ------------- Tài khoản ------------- */
+.container {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+    padding-bottom: var(--top-header-height);
+}
+
+.content {
+    padding-top: 36px;
+}
+
+.account__header {
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.account__header-avatar {
+    position: relative;
+    margin: 32px;
+}
+
+.account__header-avatar-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.account__header-verified {
+    background-color: var(--gradient-color-2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    position: absolute;
+    right: -24px;
+    bottom: 16px;
+}
+
+.account__header-info {
+    margin: 32px;
+}
+
+.account__header-name {
+    font-size: 5rem;
+}
+
+.account__header-address {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.account__container {
+    margin-top: 24px;
+}
+
+.account__personal {
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+.account__personal-info {
+    font-size: 2rem;
+}
+
+.account__personal-heading {
+    padding: 16px 0;
+}
+
+.account__personal-body {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.account__personal-text {
+    width: 170px;
+}
+
+.account__personal-input {
+    flex: 1;
+    height: 40px;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 8px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.account__personal-input:focus {
+    border-color: var(--main-color);
+}
+
+.account__personal-change-password {
+    float: right;
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.account__personal-gender {
+    display: flex;
+    margin-left: 8px;
+}
+
+.account__gender-option {
+    margin-right: 32px;
+}
+
+.account__personal-text h4 {
+    font-size: 1.8rem;
+}
+
+.account__personal-text p {
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+
+.account__personal-btn {
+    margin-left: auto;
+    width: 170px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+}
+
+.account__personal-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.account__personal-btn a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.account__history {
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 700px;
+}
+
+.overlay-item {
+    display: flex;
+    align-items: center;
+}
+
+.overlay-text {
+    width: 130px;
+}
+
+.overlay-input {
+    flex: 1;
+    height: 30px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 1.6rem;
+}
+
+.overlay-content i{
+    color: var(--main-color);
+    width: 30px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.overlay-content label{
+    line-height: 1.6;
+    padding: 10px 0;
+}
+
+.overlay-heading {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+}
+
+#hinhanhtho,
+#ngaysinh,
+#gioitinh {
+    font-size: 1.4rem;
+}
+
+.overlay-btn {
+    margin-left: auto;
+    width: 170px;
+    margin-top: 12px;
+}
+
+/* ------------- Freelancer list ------------- */
+.daluu{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.freelancer {
+    margin-top: 24px;
+}
+
+.freelancer-item {
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.freelancer-item-warp {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: #fff;
+    /* background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2)); */
+    border-radius: 10px;
+}
+
+.freelancer-item__personal-info {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.freelancer-item__avatar {
+    width: 25%;
+    position: relative;
+    margin-right: 8px;
+}
+
+.freelancer-item__avatar-img {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.freelancer-item__avatar-text {
+    padding: 3px 5px;
+    background-color: #586B50;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -9px;
+    bottom: 9px;
+}
+
+.freelancer-item__info {
+    margin: 8px 0 8px 16px;
+}
+
+.freelancer-item__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    display: block;
+    margin-bottom: 8px;
+    color: var(--main-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.freelancer-item__text {
+    font-size: 1.4rem;
+    font-style: italic;
+    /* color: #fff; */
+    color: var(--text-color);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.freelancer-item__rating {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.freelancer-item__contact {
+    padding: 0 12px;
+    /* color: #fff; */
+    color: var(--text-color);
+    position: relative;
+}
+
+.freelancer-item__contact::before {
+    --separate-width: 60%;
+    position: absolute;
+    content: "";
+    width: var(--separate-width);
+    height: 1px;
+    background-color: var(--main-color);
+    top: -10px;
+    left: calc((100% - var(--separate-width)) /2 );
+}
+
+.freelancer-item__contact-info {
+    margin-bottom: 8px;
+    margin-left: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.freelancer-item__contact-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.freelancer-item__contact-text {
+    font-size: 1.4rem;
+}
+
+
+.freelancer-item__artwork-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.freelancer-item__artwork-img {
+    width: 30%;
+    padding-top: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    margin: 1px;
+}
+
+.freelancer-item__artwork-img:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.freelancer-item__artwork-img:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.freelancer-item__view-details {
+    display: none;
+    position: absolute;
+    height: 40px;
+    left: 0;
+    right: 0;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.freelancer-item__view-details-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+}
+
+.freelancer-item:hover {
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 20px 0 rgba(71, 140, 67, 0.2);
+    /* box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.09); */
+    transform: translateY(-1px);
+}
+
+.freelancer-item:hover .freelancer-item__view-details {
+    display: flex;
+}
+
+/* ------- Thanh hiển thị số trang ------- */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 80px;
+}
+
+.pagination-item {
+    list-style: none;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    opacity: 0.8;
+}
+
+.pagination-item__link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    border-radius: 2px;
+    margin: 0 15px;
+}
+
+
+/* ------------- Responsive ------------- */
+
+/* ------------- Mobile ------------- */
+@media (max-width: 739px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }
+    
+    .account__header-avatar-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .account__header-name {
+        font-size: 1.8rem;
+    }
+
+    .account__header-address {
+        font-size: 1.4rem;
+    }
+
+    .account__header-verified {
+        font-size: 1.2rem;
+        padding: 4px 8px;
+    }
+
+    .account__personal-info {
+        font-size: 1.6rem;
+    }
+
+    .account__personal-body {
+        display: block;
+        margin: 0;
+    }
+
+    .account__personal-text {
+        margin: 0 4px;
+    }
+
+    .account__personal-input,
+    .account__personal-gender {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
+    .account__personal-btn {
+        width: 100%;
+    }
+}
+
+/* ------------- Table ------------- */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }    
+}

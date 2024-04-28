@@ -1,0 +1,34 @@
+.additional-infodanhgia{
+    text-align: left;
+}
+.danhgiatitle{
+    margin: 10px 3px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.anhtho{
+    display: flex;
+    align-items: center;
+}
+
+.anhtho span{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 4px 10px;
+}
+
+.mota {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4; /* Adjust this value to limit to the desired number of lines */
+}
+
+.mota textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    /* Add any other styling as needed */
+}

@@ -1,0 +1,504 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+/* ------------- Navbar ------------- */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
+}
+
+.navbar__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar__logo-img {
+    height: 50px;
+}
+
+.navbar__heading{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__heading img{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    object-fit: cover;
+    
+}
+
+.navbar__heading-link {
+    margin-left: 8px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__heading-icon {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+.navbar__mobile-bars {
+    display: none;
+    padding: 16px;
+    margin-left: auto;
+}
+
+/* Mobile menu */
+.mobile__menu {
+    display: none;
+    padding: 16px;
+    background-color: var(--background-color);
+}
+
+.mobile__heading {
+    padding: 8px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.mobile__heading-icon {
+    width: 22px;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-right: 8px;
+}
+
+.mobile__heading-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__mobile-bars {
+    display: none;
+    padding: 16px;
+    margin-left: auto;
+}
+
+.navbar__bars-checkbox:checked ~ .mobile__menu {
+    display: block;
+}
+
+.header__search-checkbox:checked ~ .header__search {
+    display: flex;
+}
+
+/* ------------- Responsive ------------- */
+
+/* ------------- Mobile ------------- */
+@media (max-width: 739px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }
+}
+
+/* ------------- Navbar ------------- */
+.top{
+    width: 100%;
+    height: var(--top-height);
+    background-color: #000;
+}
+
+/* ------------- Thông tin đơn hàng ------------- */
+.container {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+}
+
+.content {
+    padding-top: 36px;
+}
+
+.order-info {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.order-info__info {
+    padding: 24px;
+}
+
+.order-info__heading {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.order-info__title {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.order-info__freelance {
+    font-size: 1.8rem;
+}
+
+.order-info__freelance-warp {
+    display: flex;
+    margin: 16px 0;
+    line-height: 1.6;
+}
+
+.order-info__freelance-text {
+    flex: 1;
+}
+
+.order-info__freelance-info {
+    flex: 2;
+    font-weight: 600;
+}
+
+.order-info__service {
+    padding: 10px 24px;
+}
+
+.order-info__service-heading {
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.order-info__service-info {
+    display: flex;
+    margin: 16px 0;
+    line-height: 1.6;
+    font-size: 1.8rem;
+    color: #606060;
+}
+
+.order-info__service-name {
+    flex: 1;
+}
+
+.order-info__amount {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.order-info__amount-info {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.order-info__amount-name {
+    display: inline-block;
+    min-width: 170px;
+}
+
+.order-info__amount-total {
+    display: inline-block;
+    min-width: 170px;
+    text-align: right;
+}
+
+.order-info__amount-info:last-child {
+    font-style: normal;
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+    font-size: 2.2rem;
+}
+
+/* ------------- Hình thức thanh toán ------------- */
+.payment-methods {
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.payment-methods__heading {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.payment-methods__item {
+    margin: 16px 0;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.payment-methods__img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.payment-methods__item-warp {
+    flex: 1;
+    margin: 0 16px;
+    line-height: 1.4;
+}
+
+.payment-methods__name {
+    font-size: 2rem;
+}
+
+.payment-methods__text {
+    font-size: 1.4rem;
+}
+
+.payment-methods-btn {
+    width: 100%;
+    margin-top: 32px;
+}
+
+/* ------------- Chatbox ------------- */
+.chat-box-icon {
+    position: fixed;
+    right: 48px;
+    bottom: 32px;
+    font-size: 5rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.chat-box__checkbox:checked ~ .chat-box__container {
+    display: block;
+}
+
+.chat-box__container {
+    --chat-box-height: 550px;
+    width: 700px;
+    height: var(--chat-box-height);
+    background-color: #fff;
+    position: fixed;
+    right: 16px;
+    bottom: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.chat-box__header {
+    width: 100%;
+    height: 40px;
+    background-color: var(--main-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.chat-box__heading {
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+.chat-box__control-icon {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 11px;
+    cursor: pointer;
+}
+
+.chat-box__control-icon:hover {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.conversation {
+    height: calc(var(--chat-box-height) - 40px);
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.conversation-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.conversation-item:hover {
+    background-color: #f5f5f5;
+}
+
+.conversation-item--select {
+    background-color: #dbdbdb;
+}
+
+.conversation-item__avatar-img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.conversation-item__info {
+    font-size: 1.4rem;
+    margin-left: 8px;
+}
+
+.conversation-item__name {
+    color: var(--main-color);
+}
+
+.conversation-item__date {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.conversation-item__message {
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.message {
+
+}
+
+.message__header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.message__avatar-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.message__name {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ------------- Responsive ------------- */
+
+/* ------------- Mobile ------------- */
+@media (max-width: 739px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }
+
+    .order-info {
+        margin: 0 8px 36px;
+    }
+
+    .order-info__freelance,
+    .order-info__service-info {
+        font-size: 1.5rem;
+    }
+
+    .order-info__amount-info {
+        font-size: 1.4rem;
+        line-height: 1.8;
+    }
+
+    .order-info__amount-name {
+        min-width: auto;
+    }
+
+    .payment-methods {
+        margin: 0 8px 36px;
+    }
+
+    .payment-methods__name {
+        font-size: 1.4rem;
+    }
+
+    .payment-methods__text {    
+        font-size: 1.2rem;
+    }
+
+    .chat-box-icon {
+        font-size: 4rem;
+        right: 25px;
+        bottom: 20px;
+    }
+
+    .chat-box__container {
+        width: 100%;
+        right: 0;
+    }
+
+    .conversation-item--select {
+        background-color: #fff;
+    }
+ }
+ 
+ /* ------------- Table ------------- */
+ @media (min-width: 740px) and (max-width: 1023px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }
+    
+    .order-info__freelance,
+    .payment-methods__name {
+        font-size: 1.5rem;
+    }
+
+    .payment-methods__text {
+        display: none;
+    }
+ }
+ 
+
+ @media (min-width: 1024px) and (max-width: 1239px) {
+    .order-info__freelance {
+        font-size: 1.6rem;
+    }
+}

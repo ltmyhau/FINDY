@@ -1,0 +1,508 @@
+.container {
+    padding-top: 36px;
+    background-color: var(--background-color);
+}
+
+.content {
+    margin-top: 16px;
+}
+
+/* ------------- Filter ------------- */
+.filter {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.filter__heading {
+    font-size: 1.8rem;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.filter__heading-icon {
+    font-size: 1.6rem;
+    margin-right: 8px;
+}
+
+.filter__list {
+    padding-bottom: 12px;
+    margin: 0 10px;
+}
+
+.filter__item-warp {
+    margin: 16px;
+}
+
+.filter__item {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+
+.filter__item:hover {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.filter__item-icon {
+    background-color: #f5f5f5;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.selected {
+    border: 1px solid var(--main-color);
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.fa-chevron-up {
+    color: var(--main-color);
+}
+
+.filter__menu {
+    padding: 16px 16px 0;
+}
+
+.filter__menu-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.filter__price-input {
+    width: 80px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+.filter__menu-item input {
+    margin-right: 8px;
+    padding: 0 8px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.filter__menu-name:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.filter__menu-name {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.filter__menu-item .star-rating {
+    font-size: 1.6rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.filter__menu-btn {
+    width: 75%;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 8px;
+    border-radius: 0;
+}
+
+/* ---------------Main------------------- */
+.main{
+    padding-top: 120px;
+}
+
+.main_img{
+    width: 100%;
+    /* height: 200px; */
+    position: relative;
+    width: 100%;
+    /* height: 450px; */
+    overflow: hidden;
+}
+
+.buttom_voice{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_img video{
+   
+    width: 100%;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.main_left-img img{
+    width: 100%;
+}
+
+.main_bottom{
+    margin-top: 20px;
+}
+
+.main_bottom img{
+    width: 100%;
+    
+}
+
+.main_bottom div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main_bottom img:hover {
+    width: 95%;
+    transition: all 0.15s ease-in-out;
+}
+
+.main_bottom-container{
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------product------------- */
+.product{
+    margin-top: 100px;
+}
+.product_item{
+    text-align: center;
+}
+
+.product_item a{
+    text-decoration: none;
+}
+
+.product_item-container{
+    box-shadow: 0px 0px 8px 2px #0f0f0f;
+}
+.product_item-img{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.product_item-img img{
+    width: 100%;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.product_item-name{
+    width: 100%;
+    font-size: 20px;
+    color: #686766;
+    line-height: 70px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.product_item-price{
+    width: 100%;
+    color: #c3a196;
+    font-weight: 600;
+    padding-bottom: 200px;
+}
+
+/* ---------------banner------------- */
+.banner_img-container{
+    width: 100%;
+}
+
+.banner {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+}
+
+.banner_img{
+    position: relative;
+    overflow: hidden;
+}
+.banner_img-img {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.banner_img-img img{
+    width: 100%;
+    position: absolute;
+}
+
+
+.banner_img-img a:nth-child(2) img{
+    transform: translateX(100%);
+}
+
+.banner_img-img a:nth-child(3) img{
+    transform: translateX(200%);
+}
+
+.banner_img-img a:nth-child(4) img{
+    transform: translateX(300%);
+}
+
+.banner_img-img a:nth-child(5) img{
+    transform: translateX(400%);
+}
+
+.button_banner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button_banner i{
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 16px;
+}
+
+/* .banner_img-img a:nth-child(2) img{
+    transform: translateX(100%);
+} */
+
+/* .banner_img:nth-child(2) img{
+    transform: translateY(100%);
+} */
+.filter_top{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 10px 10px;
+}
+
+.filter_bottom{
+    margin-top: 2%;
+}
+
+.booking__input {
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 1.6rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 0 15px;
+    width: 100%;
+    outline: none;
+    margin: 5px 0;
+}
+
+
+/* --------- Job best --------- */
+.job-header {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.jobbest_item-warp {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.jobbest_item {
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.jobbest_info {
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.jobbest_item:hover {
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 20px 0 rgba(71, 140, 67, 0.2);
+    transform: translateY(-1px);
+}
+
+.jobbest_info-title {
+    font-size: 2rem;
+    width: 95%;
+    margin: 8px 0;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.jobbest_info-info {
+    margin: 8px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.jobbest_info-icon {
+    width: 16px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-right: 4px;
+    color: var(--main-color);
+}
+
+.jobbest_info-text {
+    font-size: 1.4rem;
+}
+
+.jobbest_favourite {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+}
+
+.jobbest_favourite-icon {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.jobbest_favourite-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* --------------jobintereting---------- */
+
+.jobinteresting_left{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.jobinteresting_right-img--container{
+    width: 100%;
+}
+
+
+
+.jobinteresting_right-img{
+    position: relative;
+    overflow: hidden;
+}
+.jobinteresting_right-img-number{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.jobinteresting_right-img-number img{
+    width: 100%;
+    position: absolute;
+}
+
+.jobinteresting_right-img-number a:nth-child(2) img{
+    transform: translateX(100%);
+}
+
+.jobinteresting_right-img-number a:nth-child(3) img{
+    transform: translateX(200%);
+}
+
+
+
+.jobinteresting_right-img--button{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    z-index: 90;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.jobinteresting_right-img--button i{
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* ------bannermid-------- */
+.bannermid{
+    margin: 10px 0;
+}
+
+.bannermid_items img{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .banner{
+        padding-top  : 100px;
+    }
+    .banner_img-img{
+        
+        height: 150px;
+    }
+    .button_banner{
+        
+        font-size: 1.2rem;
+      
+    }
+    .filter_top{
+        font-size: 1.5rem;
+       
+    }
+    .jobbest-header--top{
+        
+        font-size: 1.6rem;
+    }
+    .jobbest-mid-top--right{
+        
+        font-size: 1.2rem;
+       
+    }
+    .jobbest-mid-top--right p{
+       
+        font-size: 1.1rem;
+       
+      
+    }
+  }
+  

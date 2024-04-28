@@ -1,0 +1,835 @@
+.container {
+    margin-top: var(--top-header-height);
+  
+}
+.content {
+    padding-top: 36px;
+}
+
+.process {
+    position: relative;
+}
+
+.process::before {
+    content: "";
+    position: absolute;
+    width: 76%;
+    border: 2px solid #BFBDBC;
+    top: 30%;
+    left: 12%;
+    right: 12%;
+    transform: translateY(-50%);
+}
+
+.process__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.process__number {
+    font-size: 3rem;
+    color: #fff;
+    background-color: #BFBDBC;
+    /* background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2)); */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+.selected {
+    background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+}
+
+.navbar__mobile-bars {
+    display: none;
+    padding: 16px;
+    margin-left: auto;
+}
+
+/* Mobile menu */
+.mobile__menu {
+    display: none;
+    padding: 16px;
+    background-color: var(--background-color);
+}
+
+.mobile__heading {
+    padding: 8px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.mobile__heading-icon {
+    width: 22px;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-right: 8px;
+}
+
+.mobile__heading-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__mobile-bars {
+    display: none;
+    padding: 16px;
+    margin-left: auto;
+}
+
+.navbar__bars-checkbox:checked ~ .mobile__menu {
+    display: block;
+}
+
+.header__search-checkbox:checked ~ .header__search {
+    display: flex;
+}
+
+/* ------------- Responsive ------------- */
+
+/* ------------- Mobile ------------- */
+@media (max-width: 739px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }
+}
+
+/* ------------- Navbar ------------- */
+.top{
+    width: 100%;
+    height: var(--top-height);
+    background-color: #000;
+}
+
+
+/* ---------------manageroder------------ */
+.manageroder{
+    margin-top: 120px;
+}
+
+.manageroder_header{
+    text-align: center;
+
+ 
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.manageroder_header > div > div >a{
+    padding: 10px 0;
+  text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #cccccc;
+}
+
+.manageroder_header > div > div>a>i{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1.9rem;
+    color: #cccccc;
+}
+/* Màu mặc định của icon */
+.manageroder_header a i {
+    color: black; /* Màu mặc định, có thể thay đổi theo ý muốn */
+    
+}
+
+/* Màu icon khi được chọn */
+.manageroder_header a.active i {
+    color: rgb(0, 0, 0); /* Màu khi icon được chọn, có thể thay đổi theo ý muốn */
+    border: 1px solid #000000;
+}
+
+.manageroder_header a.active P {
+    color: rgb(0, 0, 0); /* Màu khi icon được chọn, có thể thay đổi theo ý muốn */
+   
+}
+
+
+.manageroder_header {
+    position: relative;
+   
+}
+
+.manageroder_header-thanhtoan::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 75%;
+    left: 13%;
+    height: 1px;
+    background-color: #ccc; /* Màu của đường kẻ */
+    z-index: -1;
+}
+
+/* CSS để định dạng màu cho liên kết */
+.bold-text {
+    font-weight: bold;
+}
+
+
+/* Định dạng cho .manageroder_content */
+
+.manageroder_content{
+    margin: 6px 0;
+}
+
+.manageroder_content > div{
+    border: 1px solid #cccccc;
+    background-color: #fafafa;
+   display: flex;
+    border-radius: 15px;
+    align-items: center;
+    /* background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2)); */
+    padding: 16px;
+}
+
+.manageroder_content-items--avatar{
+    width: 10%;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.manageroder_content-items--mid{
+    width: 59%;
+}
+
+.manageroder_content-items--button{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.manageroder_content-items--avatar img{
+    border-radius: 50%;
+}
+
+/* Định dạng cho .manageroder_container */
+
+
+
+
+/* Định dạng cho .manageroder_content-items--avatar */
+.manageroder_content-items--avatar img {
+    
+    border-radius: 50%; /* Bo góc ảnh thành hình tròn */
+}
+
+/* Định dạng cho .manageroder_content-items--mid */
+.manageroder_content-items--mid {
+    margin-left: 20px; /* Khoảng cách với .manageroder_content-items--avatar */
+}
+
+/* Định dạng cho .name */
+.name {
+    color: #263a4d;
+    display: -webkit-box;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    line-height: 28px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.manageroder_content-items--mid i{
+    color: #000;
+}
+
+
+/* ------------- Thông tin đơn hàng ------------- */
+.order {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.order__avatar {
+    position: relative;
+    margin-right: 32px;
+}
+
+.order__avatar-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.order__avatar-text {
+    padding: 4px 6px;
+    background-color: #586B50;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -8px;
+    bottom: 10px;
+}
+
+.order__info {
+    flex: 1;
+}
+
+.order__name {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.order__text {
+    font-size: 1.4rem;
+    color: #000000;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.order__text-icon {
+    font-size: 1.4rem;
+    color: #000000;
+    margin-right: 4px;
+    width: 14px;
+    text-align: center;
+}
+
+.order__title {
+    color: #000000;
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.order-btn {
+    width: 200px;
+    float: right;
+    margin-right: 32px;
+}
+
+.order__detail {
+    color: #000000;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: none;
+    position: absolute;
+    right: 32px;
+    bottom: 16px;
+}
+
+.order__detail-icon {
+    margin-left: 4px;
+}
+/* Định dạng cho .address và .time */
+.address, .time {
+    align-items: center;
+    
+    border-radius: 4px;
+    color: #263a4d;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 6px;
+    letter-spacing: .14px;
+    line-height: 22px;
+    padding: 2px 8px 2px 4px;
+}
+
+/* Định dạng cho .style */
+.style {
+    font-style: italic;
+    color: #212f3f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .175px;
+    line-height: 22px;
+}
+
+/* Định dạng cho .price */
+.price {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+/* Định dạng cho .detail */
+.detail a {
+    text-decoration: none;
+    color: #007bff; /* Màu liên kết */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Định dạng cho .manageroder_content-items--button */
+.manageroder_content-items--button button {
+    align-items: center;
+    background: var(--main-color);
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: .175px;
+    line-height: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.manageroder_content-items--button a{
+    text-decoration: none;
+}
+
+/* Định dạng cho .manageroder_content-items--button button:hover */
+.manageroder_content-items--button button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+
+  
+
+/* ------------- Quy trình ------------- */
+.container {
+    margin-top: var(--top-header-height);
+}
+
+.process {
+    position: relative;
+}
+
+.process::before {
+    content: "";
+    position: absolute;
+    width: 76%;
+    border: 2px solid #BFBDBC;
+    top: 30%;
+    left: 12%;
+    right: 12%;
+    transform: translateY(-50%);
+}
+
+.process__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.process__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.process__number {
+    width: 50px;
+    height: 50px;
+    font-size: 2.3rem;
+    color: #fff;
+    background-color: #BFBDBC;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.2;
+    cursor: pointer;
+}
+
+.process__step.active > .process__number {
+    background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+}
+
+.process__step.active > .process__name {
+    color: var(--main-color);
+}
+
+.process__name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 16px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* ------------- Thông tin đơn hàng ------------- */
+.order {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2)); */
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 10px;
+    position: relative;
+   
+}
+
+.order__avatar {
+    position: relative;
+    margin-right: 32px;
+}
+
+.order__avatar-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.order__avatar-text {
+    padding: 4px 6px;
+    background-color: #586B50;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -8px;
+    bottom: 10px;
+}
+
+.order__info {
+    flex: 1;
+}
+
+.order__name {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.order__text {
+    font-size: 1.4rem;
+    color: #000;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.order__text-icon {
+    font-size: 1.4rem;
+    color: #000;
+    margin-right: 4px;
+    width: 14px;
+    text-align: center;
+}
+
+.order__title {
+    color: #000;
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.order-btn {
+    width: 200px;
+    float: right;
+    margin-right: 32px;
+}
+
+.order__detail {
+    color: #000;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: none;
+    position: absolute;
+    right: 32px;
+    bottom: 16px;
+}
+
+.order__detail-icon {
+    margin-left: 4px;
+}
+/* ---boxchat---------- */
+/* CSS for chat container */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS for chat button */
+
+
+ 
+/* Style for the additional information container */
+.additional-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:10px 20px;
+    width: 100%;
+
+   align-items: center;
+   justify-content: center;
+    top: 0; /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a card-like effect */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it appears above other elements */
+    animation: slideDown 0.9s ease-out;
+
+}
+
+.alone{
+    width: 40%;
+}
+
+.alone form{
+    display: flex;
+    align-items: center;
+}
+
+.additional-infodanhgia {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 20px;
+    width: 95%;
+   
+    top: 0; /* Adjust the top position as needed */
+    left: 0;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a card-like effect */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it appears above other elements */
+    animation: slideDown 0.9s ease-out;
+
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for the additional information text */
+.additional-info p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.additional-infodanhgia p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+.additional-info input {
+    width: 50%;
+    height: 20px;
+    padding: 5px 2px;
+}
+
+.additional-infodanhgia input {
+    width: 20%;
+    height: auto;
+    padding: 5px 2px;
+}
+/* Style for the order detail link */
+.order__detail {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the order detail icon */
+.order__detail-icon {
+    margin-left: 5px;
+}
+
+/* Style for the order info spans */
+.order__name,
+.order__text,
+.order__title {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the order info icons */
+.order__text-icon {
+    margin-right: 5px;
+}
+
+.button_additional{
+    align-items: center;
+    background: var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    letter-spacing: .175px;
+    line-height: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    margin: 10px 20px;
+}
+
+.additional-info form{
+    display: flex;
+    
+}
+
+.additional-infodanhgia form{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.flex_botton{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+   margin-left: 200px;
+}
+ 
+.flex_botton input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additional-info a{
+    text-decoration: none;
+}
+
+.additional-infodanhgia a{
+    text-decoration: none;
+}
+/* --------ngôi sao--------- */
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    color: #ddd;
+    font-size: 30px;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: '\2605';
+}
+
+.rating input:checked ~ label,
+.rating input:checked ~ label:before,
+.rating label:hover,
+.rating label:hover ~ label,
+.rating label:hover:before,
+.rating label:hover ~ label:before {
+    color: #f90;
+}
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.additional-infodanhgia img, video {
+    max-width: 40%;
+    margin-bottom: 20px;
+}
+.danhgia{
+    display: flex;
+    align-items: center;
+}
+  
+.upload-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upload-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#selectedImage {
+    max-width: 100%;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    display: none; /* Hide the image by default */
+    margin-top: 10px;
+}
+
+#selectedVideo {
+    max-width: 100%;
+    max-height: 200px; /* Adjust the maximum height as needed */
+    display: none; /* Hide the video by default */
+    margin-top: 10px;
+}

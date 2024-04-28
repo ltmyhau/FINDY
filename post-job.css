@@ -1,0 +1,120 @@
+/* ------------- Đăng tin ------------- */
+.container {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+    padding-bottom: 60px;
+}
+
+.content {
+    padding-top: 36px;
+}
+
+.post-job {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.post-job__heading {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 32px;
+}
+
+.post-job__form {
+    padding: 0 32px;
+    font-size: 1.6rem;
+}
+
+.post-job__form-item {
+    margin-bottom: 16px;
+}
+
+.post-job__form-text {
+    line-height: 38px;
+    padding: 10px 0;
+}
+
+.post-job__form-icon {
+    width: 30px;
+    color: var(--main-color);
+}
+
+.post-job__form-input {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+#post-job__form-time,
+#post-job__form-description {
+   font-family: Arial, Helvetica, sans-serif;
+   resize: none;
+}
+
+.post-job__control {
+    display: flex;
+    justify-content: right;
+}
+
+.post-job__control button {
+    margin: 16px 32px 32px;
+}
+
+.post-job-btn {
+    width: 200px;
+}
+
+.post-job__control-btn {
+    color: var(--text-color);
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+}
+
+.post-job__control-btn:hover {
+    background-color: #f5f5f5;
+}
+
+/* ------------- Responsive ------------- */
+
+/* ------------- Mobile ------------- */
+@media (max-width: 739px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }
+    
+    .post-job {
+        width: calc(100% - 16px);
+        margin: 0 8px 32px;
+    }
+
+   .post-job__control {
+        padding: 0 32px 32px;
+   }
+
+   .post-job__control button {
+        margin: 0 8px;
+   }
+
+   .post-job__form-icon {
+        width: 20px;
+   }
+}
+
+/* ------------- Table ------------- */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .navbar__heading {
+        display: none;
+    }
+    
+    .navbar__mobile-bars {
+        display: block;
+    }
+}

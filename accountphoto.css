@@ -1,0 +1,521 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* ------------- Navbar ------------- */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar__logo-img {
+    height: 50px;
+}
+
+.navbar__heading-link {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__heading-icon {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+
+/* ---------------tabbar_title3--------- */
+
+.navbar__heading{
+    position: relative;
+}
+
+.tabbar_title3 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title4 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title3-hover{
+    text-align: left;
+    position: absolute;
+    top: 230%;
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    left: -200px;
+    border-radius: 8px;
+    padding: 20px 10px;
+    display: none;
+    z-index: 10;
+}
+
+.tabbar_title3-hover::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+
+    top:-40px;
+    left: 100px;
+}
+
+.tabbar_title3-hover--avatar img{
+    width: 100%;
+}
+
+
+.navbar__heading:hover .tabbar_title3-hover{
+    display: block;
+}
+.tabbar_title3-hover-container{
+    margin: 0px 10px;
+}
+
+.infor_user{
+    padding: 10px 0;
+    border-bottom: 1px solid #d6d6d6;
+    
+}
+
+.tabbar_title3-hover--inforiname{
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.tabbar_title3-hover--infor-ma{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.tabbar_title3-hover--infor-email{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.tabbar_title3-hover--button{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.tabbar_title3-hover--button div{
+    margin: 5px 0;
+   
+}
+
+.tabbar_title3-hover--button a{
+    text-decoration: none;
+}
+
+.tabbar_title3-hover--button div span{
+    display: none;
+    /* transition: all 1s ease; */
+}
+.tabbar_title3-hover--button div:hover span{
+    display: block;
+   
+}
+.tabbar_title3-hover--button div:hover{
+    color: var(--main-color);
+}
+
+.tabbar_title3-hover--button-settinginfor{
+    display: flex;
+    align-items: center;
+   
+   color: var(--text-color);
+   padding: 10px 5px;
+   background-color: #ebebeb;
+   border-radius: 8px;
+}
+
+.tabbar_title3-hover--button-settinginfor i{
+    color: var(--main-color);
+}
+
+
+/* ------------- Navbar ------------- */
+.top{
+    width: 100%;
+    height: var(--top-height);
+    background-color: #000;
+}
+/* ------------- Tài khoản ------------- */
+.container {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+    padding-bottom: 60px;
+}
+
+.content {
+    padding-top: 36px;
+}
+
+.account__header {
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.account__header-avatar {
+    position: relative;
+    margin: 32px;
+}
+
+.account__header-avatar-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.account__header-verified {
+    background-color: var(--gradient-color-2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    position: absolute;
+    right: -24px;
+    bottom: 16px;
+}
+
+.account__header-info {
+    margin: 32px;
+}
+
+.account__header-name {
+    font-size: 5rem;
+}
+
+.account__header-address {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.account__container {
+    margin-top: 24px;
+}
+
+.account__personal {
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+.account__personal-info {
+    font-size: 2rem;
+}
+
+.account__personal-heading {
+    padding: 16px 0;
+}
+
+.account__personal-body {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.account__personal-text {
+    width: 170px;
+}
+
+.account__personal-input {
+    flex: 1;
+    height: 40px;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 8px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.account__personal-input:focus {
+    border-color: var(--main-color);
+}
+
+.account__personal-change-password {
+    float: right;
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.account__personal-gender {
+    display: flex;
+}
+
+.account__gender-option {
+    margin-right: 32px;
+}
+
+.account__personal-text h4 {
+    font-size: 1.8rem;
+}
+
+.account__personal-text p {
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+
+.account__personal-btn {
+    margin-left: auto;
+    width: 170px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+}
+
+/* .account__personal-btn:hover {
+    background-color: #f5f5f5;
+} */
+
+.account__personal-btn a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.account__history {
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+} 
+
+.account__history-save-content {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+/* ----------jobbest------------- */
+.jobbest_item-warp {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.jobbest_item {
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.jobbest_info {
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+.jobbest_item:hover {
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 20px 0 rgba(71, 140, 67, 0.2);
+    transform: translateY(-1px);
+}
+
+.jobbest_info-title {
+    font-size: 2rem;
+    width: 95%;
+    margin: 8px 0;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.jobbest_info-info {
+    margin: 8px 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.jobbest_info-icon {
+    width: 16px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-right: 4px;
+    color: var(--main-color);
+}
+
+.jobbest_info-text {
+    font-size: 1.4rem;
+}
+
+.jobbest_favourite {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+}
+
+.jobbest_favourite-icon {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.jobbest_favourite-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 700px;
+}
+
+.overlay-item {
+    display: flex;
+    align-items: center;
+}
+
+.overlay-text {
+    width: 130px;
+}
+
+.overlay-input {
+    flex: 1;
+    height: 30px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 1.6rem;
+}
+
+.overlay-content i{
+    color: var(--main-color);
+    width: 30px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.overlay-content label{
+    line-height: 1.6;
+    padding: 10px 0;
+}
+
+.overlay-heading {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+}
+
+#hinhanhtho,
+#ngaysinh,
+#gioitinh {
+    font-size: 1.4rem;
+}
+
+.overlay-btn {
+    margin-left: auto;
+    width: 170px;
+    margin-top: 12px;
+}
+
+/* ------------- Responsive ------------- */
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .account__header-avatar-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .account__header-name {
+        font-size: 1.8rem;
+    }
+
+    .account__header-address {
+        font-size: 1.4rem;
+    }
+
+    .account__header-verified {
+        font-size: 1.2rem;
+        padding: 4px 8px;
+    }
+
+    .account__personal-info {
+        font-size: 1.6rem;
+    }
+
+    .account__personal-body {
+        display: block;
+        margin: 0;
+    }
+
+    .account__personal-text {
+        margin: 0 4px;
+    }
+
+    .account__personal-input,
+    .account__personal-gender {
+        width: 100%;
+        margin: 8px 0 16px;
+    }
+
+    .account__personal-btn {
+        width: 100%;
+    }
+}

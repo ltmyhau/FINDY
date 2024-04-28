@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* ------------- Navbar ------------- */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar__logo-img {
+    height: 60px;
+}
+
+.navbar__heading-link {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__heading-icon {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+/* ------------- Tài khoản ------------- */
+.container {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+}
+
+.content {
+    padding-top: 36px;
+}
+
+.account__header {
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.account__header-avatar {
+    position: relative;
+    margin: 32px;
+}
+
+.account__header-avatar-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.account__header-verified {
+    background-color: var(--gradient-color-2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    position: absolute;
+    right: -24px;
+    bottom: 16px;
+}
+
+.account__header-info {
+    margin: 32px;
+}
+
+.account__header-name {
+    font-size: 5rem;
+}
+
+.account__header-address {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.account__container {
+    margin-top: 24px;
+}
+
+.account__personal {
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+.account__personal-info {
+    font-size: 2rem;
+}
+
+.account__personal-heading {
+    padding: 16px 0;
+}
+
+.account__personal-body {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.account__personal-text {
+    width: 170px;
+}
+
+.account__personal-input {
+    flex: 1;
+    height: 40px;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 8px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.account__personal-input:focus {
+    border-color: var(--main-color);
+}
+
+.account__personal-change-password {
+    float: right;
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.account__personal-gender {
+    display: flex;
+}
+
+.account__gender-option {
+    margin-right: 32px;
+}
+
+.account__personal-text h4 {
+    font-size: 1.8rem;
+}
+
+.account__personal-text p {
+    font-size: 1.6rem;
+    margin-top: 8px;
+}
+
+.account__personal-btn {
+    margin-left: auto;
+    width: 170px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+}
+
+.account__personal-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.account__history {
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+
+/* ------------- Responsive ------------- */
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .account__header-avatar-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .account__header-name {
+        font-size: 1.8rem;
+    }
+
+    .account__header-address {
+        font-size: 1.4rem;
+    }
+
+    .account__header-verified {
+        font-size: 1.2rem;
+        padding: 4px 8px;
+    }
+
+    .account__personal-info {
+        font-size: 1.6rem;
+    }
+
+    .account__personal-body {
+        display: block;
+        margin: 0;
+    }
+
+    .account__personal-text {
+        margin: 0 4px;
+    }
+
+    .account__personal-input,
+    .account__personal-gender {
+        width: 100%;
+        margin: 8px 0 16px;
+    }
+
+    .account__personal-btn {
+        width: 100%;
+    }
+}

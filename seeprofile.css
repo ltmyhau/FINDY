@@ -1,0 +1,1160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* ------------- Navbar ------------- */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar__logo-img {
+    height: 50px;
+}
+
+.navbar__heading-link {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__heading-icon {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+
+/* ---------------tabbar_title3--------- */
+
+.navbar__heading{
+    position: relative;
+}
+
+.tabbar_title3 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title4 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title3-hover{
+    text-align: left;
+    position: absolute;
+    top: 230%;
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    left: -200px;
+    border-radius: 8px;
+    padding: 20px 10px;
+    display: none;
+    z-index: 10;
+}
+
+.tabbar_title3-hover::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+
+    top:-40px;
+    left: 100px;
+}
+
+.tabbar_title3-hover--avatar img{
+    width: 100%;
+}
+
+
+.navbar__heading:hover .tabbar_title3-hover{
+    display: block;
+}
+.tabbar_title3-hover-container{
+    margin: 0px 10px;
+}
+
+.infor_user{
+    padding: 10px 0;
+    border-bottom: 1px solid #d6d6d6;
+    
+}
+
+.tabbar_title3-hover--inforiname{
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.tabbar_title3-hover--infor-ma{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.tabbar_title3-hover--infor-email{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.tabbar_title3-hover--button{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.tabbar_title3-hover--button div{
+    margin: 5px 0;
+   
+}
+
+.tabbar_title3-hover--button a{
+    text-decoration: none;
+}
+
+.tabbar_title3-hover--button div span{
+    display: none;
+    /* transition: all 1s ease; */
+}
+.tabbar_title3-hover--button div:hover span{
+    display: block;
+   
+}
+.tabbar_title3-hover--button div:hover{
+    color: var(--main-color);
+}
+
+.tabbar_title3-hover--button-settinginfor{
+    display: flex;
+    align-items: center;
+   
+   color: var(--text-color);
+   padding: 10px 5px;
+   background-color: #ebebeb;
+   border-radius: 8px;
+}
+
+.tabbar_title3-hover--button-settinginfor i{
+    color: var(--main-color);
+}
+
+
+/* ------------- Navbar ------------- */
+.top{
+    width: 100%;
+    height: var(--top-height);
+    background-color: #000;
+}
+
+
+
+/* ---------------Main------------------- */
+
+
+.main{
+    padding-top: 120px;
+}
+
+.main_img{
+    width: 100%;
+    /* height: 200px; */
+    position: relative;
+    width: 100%;
+    /* height: 450px; */
+    overflow: hidden;
+}
+
+.buttom_voice{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_img video{
+   
+    width: 100%;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.main_left-img img{
+    width: 100%;
+}
+
+.main_bottom{
+    margin-top: 20px;
+}
+
+.main_bottom img{
+    width: 100%;
+    
+}
+
+.main_bottom div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main_bottom img:hover {
+    width: 95%;
+    transition: all 0.15s ease-in-out;
+}
+
+.main_bottom-container{
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------product------------- */
+.product{
+    margin-top: 100px;
+}
+.product_item{
+    text-align: center;
+}
+
+.product_item a{
+    text-decoration: none;
+}
+
+.product_item-container{
+    box-shadow: 0px 0px 8px 2px #0f0f0f;
+}
+.product_item-img{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.product_item-img img{
+    width: 100%;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.product_item-name{
+    width: 100%;
+    font-size: 20px;
+    color: #686766;
+    line-height: 70px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+}
+
+.product_item-price{
+    width: 100%;
+    color: #c3a196;
+    font-weight: 600;
+    padding-bottom: 200px;
+}
+
+/* ---------------banner------------- */
+.banner_img-container{
+    width: 100%;
+}
+
+.banner{
+    padding-top  : 120px;
+}
+
+.banner_img{
+    position: relative;
+    overflow: hidden;
+}
+.banner_img-img{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.banner_img-img img{
+    width: 100%;
+    position: absolute;
+}
+
+
+.banner_img-img a:nth-child(2) img{
+    transform: translateX(100%);
+}
+
+.banner_img-img a:nth-child(3) img{
+    transform: translateX(200%);
+}
+
+.banner_img-img a:nth-child(4) img{
+    transform: translateX(300%);
+}
+
+.banner_img-img a:nth-child(5) img{
+    transform: translateX(400%);
+}
+
+.button_banner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    z-index: 90;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.button_banner i{
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* .banner_img-img a:nth-child(2) img{
+    transform: translateX(100%);
+} */
+
+/* .banner_img:nth-child(2) img{
+    transform: translateY(100%);
+} */
+
+
+
+/* ----------jobbest------------- */
+
+
+.jobbest-header--top{
+    color: #00b14f;
+    display: flex;
+    font-weight: 600;
+    gap: 10px;
+    line-height: 28px;
+    font-size: 2.0rem;
+}
+    
+.jobbest-header--bottom{
+    display: flex;
+    align-items: center;
+}
+
+.jobbest-header--bottom_filter input{
+    padding: 7px 10px;
+    border-radius: 3px;
+    border: 1px solid #b3b3b3;
+}
+
+.jobbest-header--bottom-button{
+    background-color: #dcdcdc;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 7px 10px;
+    margin: 5px 10px;
+    border-radius: 15px;
+}
+
+.jobbest{
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.jobbest-mid a{
+    text-decoration: none;
+   
+    
+}
+
+.jobbest-mid div > a > div{
+    background-color: #fcfcfc;
+    margin: 7px 0;
+   padding: 10px 15px;
+   border-radius: 15px;
+   border: 1px solid  #e2e2e2; ;
+}
+
+.jobbest-mid div > a:hover >div {
+    border: 1px solid #a8a8a8;
+    background-color: white;
+}
+
+.jobbest-mid-top--left img{
+    width: 100%;
+}
+
+.jobbest-mid-top--right{
+    color: #212f3f;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.jobbest-mid-top--right p{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.jobbest-mid-bottom{
+    display: flex;
+}
+
+.jobbest-mid-bottom-item{
+    background: #f4f5f5;
+    border-radius: 4px;
+    color: #212f3f;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 4px 8px;
+}
+
+.jobbest-bottom{
+    margin: 10px 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.jobbest-bottom span{
+    margin: 0 5px;
+}
+
+.jobbest-bottom i{
+    padding: 8px 10px;
+    color: #009643;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #00b14f;
+}
+
+/* --------------jobintereting---------- */
+
+.jobinteresting_left{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.jobinteresting_right-img--container{
+    width: 100%;
+}
+
+
+
+.jobinteresting_right-img{
+    position: relative;
+    overflow: hidden;
+}
+.jobinteresting_right-img-number{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.jobinteresting_right-img-number img{
+    width: 100%;
+    position: absolute;
+}
+
+.jobinteresting_right-img-number a:nth-child(2) img{
+    transform: translateX(100%);
+}
+
+.jobinteresting_right-img-number a:nth-child(3) img{
+    transform: translateX(200%);
+}
+
+
+
+.jobinteresting_right-img--button{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    z-index: 90;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+.jobinteresting_right-img--button i{
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* ------bannermid-------- */
+.bannermid{
+    margin: 10px 0;
+}
+
+.bannermid_items img{
+    width: 100%;
+    height: auto;
+}
+
+/* ----------------footer-------------- */
+
+
+
+.footer{
+    margin-top: 150px;
+    background-color: #12151b;
+    padding: 50px 0;
+    color: var(--text-color-main);
+    font-size: 1rem;
+    border-top: 1px solid #686766;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--text-color-main);
+}
+
+.footer_logo div{
+    font-size: 1.3rem;
+    margin: 5px 0;
+    color: var(--text-color-main);
+}
+
+.footer_logo div a{
+    text-decoration: none;
+    color: var(--text-color-main);
+}
+.footer_logo-logo img{
+    width: 30%;
+}
+
+.footer div h1{
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.footer div ul li{
+    list-style: none;
+    
+    margin: 5px 0;
+   
+}
+
+.footer div ul a li:hover{
+    padding-left: 15px;
+    color: #5643ff;
+    transition: all 0.3s ease-in;
+}
+
+/* ------- Form đăng nhập, đăng ký -------*/
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal__container {
+    margin: auto;
+}
+
+.account_form {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.account_form__container {
+    padding: 16px 32px;
+}
+
+.account_form__heading {
+    color: var(--text-color);
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.account_form__form {
+    margin: 16px;
+}
+
+.account_form__input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+.show-hide-password {
+    position: absolute;
+    padding: 12px;
+    font-size: 1.4rem;
+    top: calc((100% - 16px) / 2);
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.account_form__input:focus {
+    border-color: var(--main-color);
+}
+
+.account_form__aside {
+    margin: 0 16px;
+}
+
+.account_form__policy-text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.account_form__policy-link {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.account_form__btn {
+    width: calc(100% - 32px);
+    margin: 20px 16px;
+}
+
+.account_form__socials {
+    padding: 0 32px;
+}
+
+.account_form__separate {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
+    line-height: 0;
+}
+
+.account_form__separate-text {
+    font-size: 1.4rem;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.25);
+    padding: 0 10px;
+}
+
+.account_form__socials-list {
+    margin: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account_form__socials--facebook {
+    color: #3a5a9b;
+}
+
+.account_form__socials--google {
+    color: #000;
+}
+
+.account_form__socials--facebook,
+.account_form__socials--google {
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.account_form__socials--facebook:hover,
+.account_form__socials--google:hover {
+    background-color: #f5f5f5;
+}
+
+.account_form__socials-icon {
+    font-size: 2.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.account_form__socials-title {
+    margin: 0 16px;
+}
+
+.account_form__footer {
+    /* padding: 80px 32px 16px; */
+    padding: 16px 32px;
+    text-align: center;
+}
+
+.account_form__footer-btn {
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.account_form__text {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.account_form__link {
+    text-decoration: none;
+    color: var(--main-color)
+}
+
+
+/* --------------headeruser------------- */
+.insert{
+    margin-top: 140px;
+}
+.insert-profile{
+    /* background-color: #ebebeb; */
+   
+}
+#preview-container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+#preview-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.insert-profile-left{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #333333;
+    margin-right: 5%;
+}
+
+.insert-profile-left > div{
+    margin: 10px 0px;
+}
+
+.insert-profile-left h1{
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+}
+
+.insert-profile-right-name{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.insert-profile-left label{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #555657;
+    margin: 7px 0;
+}
+
+.insert-profile-left-skill label{
+    margin: 5px 0;
+}
+
+.insert-profile-left input{
+    outline: none;
+    color: #000000;
+    border: none;
+    width:  100%;
+    margin: 4px 0;
+    padding: 3px 4px;
+    background-color: rgba(255, 255, 255, 0); 
+}
+
+.insert-profile-left-img input{
+    color: white;
+   
+}
+
+.insert-profile-left-img img{
+    width: 90%;
+}
+
+.insert-profile-right-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insert-profile-right{
+    display: flex;
+}
+/* CSS để tạo ô và dấu "+" */
+.image-container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-container span{
+    font-size: 1.2rem;
+    color: #545454;
+}
+.insert-profile-right-items > div >div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.image-container:hover {
+    background-color: #f0f0f0;
+}
+
+.insert-profile-right-items-name{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+/* input[type="file"] {
+    display: none;
+} */
+/* Style để đảm bảo ảnh trong ô trống không bị tràn ra ngoài */
+
+/* CSS styles here */
+
+/* Define the styles for the button with the class "styled-button" */
+.styled-button {
+    margin: 10px 0;
+    display: flex;
+    text-align: center;
+    background-color: #007BFF; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change the cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+/* Add a hover effect */
+.styled-button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+
+/* ------------- Profile của thợ ------------- */
+.container {
+    margin-top: var(--top-header-height);
+    background-color: var(--background-color);
+}
+
+.content {
+    padding-top: 36px;
+}
+
+.freelancer {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.freelancer-info {
+    margin: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.personal-info {
+    text-align: center;
+}
+
+.personal-info__avatar {
+    width: 100%;
+    margin: 16px 0;
+}
+
+.personal-info__avatar-img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.personal-info__name {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.personal-info__title {
+    font-size: 1.6rem;
+    margin: 4px;
+}
+
+.personal-info__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-info__rating-number {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-right: 2px;
+}
+
+.personal-info__rating-reviews {
+    font-size: 1.4rem;
+}
+
+.freelancer-info-btn {
+    width: 90%;
+    margin: 5%;
+}
+
+.contact-info {
+    margin: 20px;
+}
+
+.contact-info__info {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.contact-info__info-icon {
+    color: var(--main-color);
+    margin-right: 8px;
+}
+
+.contact-info__info-number {
+    font-weight: 600;
+}
+
+.freelancer-description {
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.freelancer-description__heading {
+    margin-bottom: 16px;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.freelancer-description__introduce {
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.freelancer-title {
+    margin-top: 36px;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.freelancer-artwork {
+    margin-right: 16px;
+}
+
+.artwork-collection {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.artwork-collection:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.09);
+    transform: translateY(-1px);
+}
+
+.artwork-collection__name {
+    /* color: var(--main-color); */
+    font-size: 1.6rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.artwork-collection__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8px 16px;
+}
+
+.artwork-collection__img {
+    width: calc(50% - 4px);
+    object-fit: cover;
+    margin: 2px;
+    border: 1px solid var(--border-color);
+}
+
+.artwork-collection__price {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.artwork-collection__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.artwork-collection__info-text {
+    font-size: 1.2rem;
+}
+
+.artwork-collection__control {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.artwork-collection__control-btn {
+    width: 90%;
+    margin: 5%;
+}
+
+
+/* ------------- Thanh hiển thị số trang ------------- */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 80px;
+}
+
+.pagination-item {
+    list-style: none;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    opacity: 0.8;
+}
+
+.pagination-item__link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    border-radius: 2px;
+    margin: 0 15px;
+}
+
+/* ------------- Đánh giá ------------- */
+.review {
+    margin-top: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.review__heading {
+    padding: 16px 32px;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 16px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    height: 150px;
+}
+
+.review-item__avatar {
+    margin: 16px 0 16px 16px;
+}
+
+.review-item__avatar-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-item__content {
+    margin: 16px;
+}
+
+.review-item__content-name {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+.review-item__content-time {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.review-item__content-text {
+    font-size: 1.2rem;
+    text-align: justify;
+}

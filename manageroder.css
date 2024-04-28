@@ -1,0 +1,837 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* ------------- Navbar ------------- */
+.navbar {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
+.navbar__logo-img {
+    height: 50px;
+}
+
+.navbar__heading-link {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar__heading-icon {
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+
+/* ---------------tabbar_title3--------- */
+
+.navbar__heading{
+    position: relative;
+}
+
+.tabbar_title3 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title4 > div{
+    border-right: 1px solid #00000033;
+}
+
+.tabbar_title3-hover{
+    text-align: left;
+    position: absolute;
+    top: 230%;
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    background-color: white;
+    left: -200px;
+    border-radius: 8px;
+    padding: 20px 10px;
+    display: none;
+    z-index: 10;
+}
+
+.tabbar_title3-hover::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+
+    top:-40px;
+    left: 100px;
+}
+
+.tabbar_title3-hover--avatar img{
+    width: 100%;
+}
+
+
+.navbar__heading:hover .tabbar_title3-hover{
+    display: block;
+}
+.tabbar_title3-hover-container{
+    margin: 0px 10px;
+}
+
+.infor_user{
+    padding: 10px 0;
+    border-bottom: 1px solid #d6d6d6;
+    
+}
+
+.tabbar_title3-hover--inforiname{
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.tabbar_title3-hover--infor-ma{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.tabbar_title3-hover--infor-email{
+    color: #6f7882;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.tabbar_title3-hover--button{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.tabbar_title3-hover--button div{
+    margin: 5px 0;
+   
+}
+
+.tabbar_title3-hover--button a{
+    text-decoration: none;
+}
+
+.tabbar_title3-hover--button div span{
+    display: none;
+    /* transition: all 1s ease; */
+}
+.tabbar_title3-hover--button div:hover span{
+    display: block;
+   
+}
+.tabbar_title3-hover--button div:hover{
+    color: var(--main-color);
+}
+
+.tabbar_title3-hover--button-settinginfor{
+    display: flex;
+    align-items: center;
+   
+   color: var(--text-color);
+   padding: 10px 5px;
+   background-color: #ebebeb;
+   border-radius: 8px;
+}
+
+.tabbar_title3-hover--button-settinginfor i{
+    color: var(--main-color);
+}
+
+
+/* ------------- Navbar ------------- */
+.top{
+    width: 100%;
+    height: var(--top-height);
+    background-color: #000;
+}
+
+/* ------------- Quy trình ------------- */
+.container {
+    margin-top: var(--top-header-height);
+}
+
+.process {
+    position: relative;
+}
+
+.process::before {
+    content: "";
+    position: absolute;
+    width: 76%;
+    border: 2px solid #BFBDBC;
+    top: 30%;
+    left: 12%;
+    right: 12%;
+    transform: translateY(-50%);
+}
+
+.process__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.process__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.process__number {
+    width: 50px;
+    height: 50px;
+    font-size: 2.3rem;
+    color: #fff;
+    background-color: #BFBDBC;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.2;
+    cursor: pointer;
+}
+
+.process__step.active > .process__number {
+    background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2));
+}
+
+.process__step.active > .process__name {
+    color: var(--main-color);
+}
+
+.process__name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 16px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* ------------- Thông tin đơn hàng ------------- */
+.order {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    /* background-image: linear-gradient(90deg, var(--gradient-color-1), var(--gradient-color-2)); */
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.order__avatar {
+    position: relative;
+    margin-right: 32px;
+}
+
+.order__avatar-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+}
+
+.order__avatar-text {
+    padding: 4px 6px;
+    background-color: #586B50;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    position: absolute;
+    right: -8px;
+    bottom: 10px;
+}
+
+.order__info {
+    flex: 1;
+}
+
+.order__name {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.order__text {
+    font-size: 1.4rem;
+    color: #000000;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.order__text-icon {
+    font-size: 1.4rem;
+    color: #000000;
+    margin-right: 4px;
+    width: 14px;
+    text-align: center;
+}
+
+.order__title {
+    color: #000000;
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.order-btn {
+    width: 200px;
+    float: right;
+    margin-right: 32px;
+}
+
+.order__detail {
+    color: #000000;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: none;
+    position: absolute;
+    right: 32px;
+    bottom: 16px;
+}
+
+.order__detail-icon {
+    margin-left: 4px;
+}
+
+/* ---------------manageroder------------ */
+.manageroder{
+    margin-top: 120px;
+}
+
+.manageroder_header{
+    text-align: center;
+
+ 
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.manageroder_header > div > div >a{
+    padding: 10px 0;
+  text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #cccccc;
+}
+
+.manageroder_header > div > div>a>i{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1.9rem;
+    color: #cccccc;
+}
+/* Màu mặc định của icon */
+.manageroder_header a i {
+    color: black; /* Màu mặc định, có thể thay đổi theo ý muốn */
+    
+}
+
+/* Màu icon khi được chọn */
+.manageroder_header a.active i {
+    color: rgb(0, 0, 0); /* Màu khi icon được chọn, có thể thay đổi theo ý muốn */
+    border: 1px solid #000000;
+}
+
+.manageroder_header a.active P {
+    color: rgb(0, 0, 0); /* Màu khi icon được chọn, có thể thay đổi theo ý muốn */
+   
+}
+
+
+.manageroder_header {
+    position: relative;
+   
+}
+
+.manageroder_header-thanhtoan::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 75%;
+    left: 13%;
+    height: 1px;
+    background-color: #ccc; /* Màu của đường kẻ */
+    z-index: -1;
+}
+
+/* CSS để định dạng màu cho liên kết */
+.bold-text {
+    font-weight: bold;
+}
+
+
+/* Định dạng cho .manageroder_content */
+
+.manageroder_content{
+    margin: 6px 0;
+}
+
+.manageroder_content > div{
+    border: 1px solid #cccccc;
+    background-color: #fafafa;
+   display: flex;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.manageroder_content-items--avatar{
+    width: 10%;
+    text-align: center;
+    margin-left: 1%;
+}
+
+.manageroder_content-items--mid{
+    width: 59%;
+}
+
+.manageroder_content-items--button{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.manageroder_content-items--avatar img{
+    width: 100%;
+}
+
+/* Định dạng cho .manageroder_container */
+
+
+
+
+/* Định dạng cho .manageroder_content-items--avatar */
+.manageroder_content-items--avatar img {
+    max-width: 100%;
+    border-radius: 50%; /* Bo góc ảnh thành hình tròn */
+}
+
+/* Định dạng cho .manageroder_content-items--mid */
+.manageroder_content-items--mid {
+    margin-left: 20px; /* Khoảng cách với .manageroder_content-items--avatar */
+}
+
+/* Định dạng cho .name */
+.name {
+    color: #263a4d;
+    display: -webkit-box;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    line-height: 28px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Định dạng cho .address và .time */
+.address, .time {
+    align-items: center;
+    
+    border-radius: 4px;
+    color: #263a4d;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 6px;
+    letter-spacing: .14px;
+    line-height: 22px;
+    padding: 2px 8px 2px 4px;
+}
+
+/* Định dạng cho .style */
+.style {
+    font-style: italic;
+    color: #212f3f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: .175px;
+    line-height: 22px;
+}
+
+/* Định dạng cho .price */
+.price {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+/* Định dạng cho .detail */
+.detail a {
+    text-decoration: none;
+    color: #007bff; /* Màu liên kết */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Định dạng cho .manageroder_content-items--button */
+.manageroder_content-items--button button {
+    align-items: center;
+    background: var(--main-color);
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 40px;
+    justify-content: center;
+    letter-spacing: .175px;
+    line-height: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Định dạng cho .manageroder_content-items--button button:hover */
+.manageroder_content-items--button button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+
+  
+
+/* ---boxchat---------- */
+/* CSS for chat container */
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* model */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 80%;
+    height: 80%;
+}
+
+/* Style for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+/* Additional styling for the modal content */
+.modal-content {
+    text-align: center;
+}
+
+/* Close button style */
+.close {
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+/* Style for the button text */
+.order-btn span {
+    flex-grow: 1;
+}
+
+/* Style for the additional information container */
+.additional-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:10px 20px;
+    width: 100%;
+   
+    top: 0; /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a card-like effect */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it appears above other elements */
+    animation: slideDown 0.9s ease-out;
+
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for the additional information text */
+.additional-info p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.additional-info input {
+    width: 20%;
+    height: auto;
+    padding: 5px 2px;
+}
+
+/* Style for the order detail link */
+.order__detail {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the order detail icon */
+.order__detail-icon {
+    margin-left: 5px;
+}
+
+/* Style for the order info spans */
+.order__name,
+.order__text,
+.order__title {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the order info icons */
+.order__text-icon {
+    margin-right: 5px;
+}
+
+.button_additional{
+    align-items: center;
+    background: var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    justify-content: center;
+    letter-spacing: .175px;
+    line-height: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+/* ------------- */
+
+
+/* Style for the button text */
+.order-btn span {
+    flex-grow: 1;
+}
+
+/* Style for the additional information container */
+.additional-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:10px 20px;
+    width: 100%;
+   
+    top: 0; /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a card-like effect */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it appears above other elements */
+    animation: slideDown 0.9s ease-out;
+
+}
+
+
+
+/* Style for the additional information text */
+.additional-info1 p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.additional-info1 input {
+    width: 20%;
+    height: auto;
+    padding: 5px 2px;
+}
+
+/* Style for the order detail link */
+.order__detail1 {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the order detail icon */
+.order__detail-icon1 {
+    margin-left: 5px;
+}
+
+/* Style for the order info spans */
+.order__name1,
+.order__text1,
+.order__title1 {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the order info icons */
+.order__text-icon1 {
+    margin-right: 5px;
+}
+
+.button_additional1{
+    align-items: center;
+    background: var(--main-color);
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    justify-content: center;
+    letter-spacing: .175px;
+    line-height: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.additional-info1 { 
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:10px 20px;
+    width: 100%;
+   
+    top: 0; /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a card-like effect */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure it appears above other elements */
+    animation: slideDown 0.9s ease-out;
+
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ----xem chi tiết */
+
+  
+  
+/* CSS for chat button */
+
+@media (max-width: 768px) {
+    .name {
+       
+        
+        font-size: 1.5rem;
+        
+    }
+    .address, .time {
+        align-items: center;
+        
+        border-radius: 4px;
+        color: #263a4d;
+        display: flex;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        gap: 6px;
+        letter-spacing: .14px;
+        line-height: 22px;
+        padding: 1px 4px 1px 2px;
+    }
+    
+  }
+  
+  
+  
+  
